@@ -1,0 +1,48 @@
+html{
+    font-size: 25px;
+    box-sizing: border-box;
+   
+    
+}
+.degrade-multicolore {
+    background: linear-gradient(to left, rgb(103, 132, 123), rgb(0, 51, 255) 28px, red 40%, cyan);
+  }
+  form{
+    height: auto;
+    width: 350px;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    font-size: 25px;
+
+
+  }
+
+  button{
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 20PX;
+    
+  }
+  
+  
+
+h1, p {
+    text-align: center;
+}
+
+.fieldset{
+    display:block;
+    border-radius: 5px;
+}
+.button:hover{
+    color: blue;
+    background-color: crimson;
+}
+
+input{
+ 
+  margin-bottom: 10px;
+}
