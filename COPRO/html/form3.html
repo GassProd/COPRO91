@@ -8,42 +8,77 @@
 </head>
 <body>
     <header>
-        <h1>Copropriété Domaine de Windsor Draveil</h1>
-        <nav label="menu principal">
-            <ul>
+    <div class="header">   
+        <nav label="menu principal" class="navbar">
+            <ul class="menu">
                 <li><a href="form3.html">Accueil</a></li>
                 <li><a href="">A propos</a></li>
                 <li><a href="contact">Contact</a></li>
+                <li><a href="info">Informations</a></li>
+                <li><a href ="chat">Discussion</a></li>
             </ul>
+            <form type="search" class="search">
+                <input type="search" name="search" id="search" placeholder="Rechercher">
+                
         </nav>
+    </div>
     </header>
     <main>
-        
+        <h1>Copropriété Domaine de Windsor Draveil</h1>
         <h2>Création de compte:</h2>
         <!--creation formulaire d'inscription-->
         <form class="container">
-            <label for ="name">Nom:</label>
-            <input type="text" name="name" id="name" placeholder="Nom">
-            <label for ="prenom" class="prenom">Prénom:</label>
-            <input type="text" name="prenom" id="prenom" placeholder="Prénom">
-            <label for="adresse" class="adress">Adresse:</label>
-            <input type="adresse" id="adresse" name="adresse">
-            <label for="ville" class="ville">Ville:</label>
-            <input type="ville" id="ville" name="ville">
-            <label for="cp" class="cp">Code postal:</label>
-            <input type="cp" id="cp" name="cp">
-            <label for="tel" class="tel">Téléphone:</label>
-            <input type="tel" id="tel" name="tel">
-           <label for="maison" class="maison">Type maison:</label>
-            <select name="maison" id="choix-maison">
-                <option value="">--Choisir votre type de maison:--</option>
-                <option value="chelsea">Chelsea</option>
-                <option value="maison2">Maison2</option>
-                <option value="maison3">Maison3</option>
-              </select>
-            <button type="submit" class="bouton">S'enregistrer</button>
-            <button type="reset" class="bouton">Annuler</button>
-        </form>
+            <div><label for ="name">Nom:</label>
+                <input type="text" name="name" id="name" placeholder="Nom">
+            </div>
+
+            <div><label for ="firstname">Prénom:</label>
+                <input type="text" name="firstname" id="firstname" placeholder="Prénom">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Email">
+            </div>
+            <div>
+                <label for="password">Mot de passe:</label>
+                <input type="password" name="password" id="password" placeholder="Mot de passe">
+            </div>
+            <div>
+                <label for="password">Confirmer mot de passe:</label>
+                <input type="password" name="password" id="password" placeholder="Confirmer mot de passe">
+            </div>
+            <div>
+                <label for="phone">Téléphone:</label>
+                <input type="tel" name="phone" id="phone" placeholder="Téléphone">
+            </div>
+            <div>
+                <label for="adresse">Adresse:</label>
+                <input type="text" name="adresse" id="adresse" placeholder="Adresse">
+            </div>
+            <div>
+                <label for="codepostal">Code postal:</label>
+                <input type="text" name="codepostal" id="codepostal" placeholder="Code postal">
+            </div>
+            <div>
+                <label for="ville">Ville:</label>
+                <input type="text" name="ville" id="ville" placeholder="Ville">
+            </div>
+            <div>
+                <label for="pays">Pays:</label>
+                <input type="text" name="pays" id="pays" placeholder="Pays">
+            </div>
+             <div><label for="maison" class="maison">Type maison:</label>
+                <select name="maison" id="choix-maison">
+                    <option value="">--Choisir votre type de maison:--</option>
+                    <option value="chelsea">Chelsea</option>
+                    <option value="maison2">Maison2</option>
+                    <option value="maison3">Maison3</option>
+                  </select></div>           
+           <div><button type="submit" class="bouton">S'enregistrer</button>
+           </div>
+           <div><button type="reset" class="bouton">Annuler</button>
+           </div>
+              </form>
         
     </main>
     <footer></footer>
