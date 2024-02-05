@@ -1,4 +1,4 @@
-import Formulaire from "./formulaire.js";
+import Formulaire from "./evenement.js";
 
 //Créer le formulaire
 
