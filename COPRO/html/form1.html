@@ -9,40 +9,35 @@
 <body class="degrade-multicolore">
     <h1>Bienvenue à la Copropriété Windsor Draveil!</h1>
     <p>Pour vous permettre d'accéder aux services de ce site, veuillez faire votre choix:</p>
-    <section>
+    
         <form class="form" name="form1">
-            <fieldset class ="fieldset">
+            <fieldset class="fieldset">
                 <legend>Choisir votre profil:</legend>
                 <div>
                      <input type="radio" name="profil" checked value="administrateur" >Administrateur
                     <br>
                     <input type="radio" name="profil" value="proprietaire" >Propriétaire
                     <br>
-                    <input type="radio" name="profil" value="visiteur" >Visiteur
+                    <input type="radio" name="profil" value="newUser" >Nouvel utilisateur
                 </div>                    
-
+            
             </fieldset>
-            <button class="button" id="mybutton" onclick="TypeProfile()" value="Choisir votre profil" type="button">Entrer</button>
+            <button class="button" id="mybutton" onclick="TypeProfile()" 
+                value="Choisir votre profil"  type="button">Entrer</button>
             <button class="button" type="button">Sortir</button>
-            <a href="">Créer compte</a>
+            
         </form>
-        
-        
-    </section>
-    <script src="../javascript/evenement.js"></script>
+    <script>
+        function TypeProfile() {
+    let profil = document.forms["form1"].profil.value;
+    if (profil === "administrateur") {
+      window.location.href = "../html/form2.html";
+    } else if (profil === "proprietaire") {
+      window.location.href = "../html/form2.html";
+    } else {
+      window.location.href = "../html/form3.html";
+    }
+  }
+    </script>
 </body>
 </html>
-<!--<script>
-            function TypeProfile()
-            {
-            var element = document.form1.profil;
-            for (let i=0; i < element.length; i++)
-            {
-                if (element[i].checked) 
-                {
-                let profil = element[i].value;
-                break;
-                }
-            }
-            }
-        </script>-->
